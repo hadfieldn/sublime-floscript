@@ -1,7 +1,7 @@
+<a href="https://github.com/ioflo/ioflo"><img src="https://github.com/ioflo/ioflo/blob/master/docs/images/floscript_logo.png?raw=true" height="25" width="85"></a>
+
 # sublime-floscript
 Sublime Text package with syntax highlighting support for [FloScript](https://github.com/ioflo/ioflo).
-
-<a href="https://github.com/ioflo/ioflo"><img src="https://github.com/ioflo/ioflo/blob/master/docs/images/floscript_logo.png?raw=true" height="25" width="85"></a>
 
 ## Installation
 
