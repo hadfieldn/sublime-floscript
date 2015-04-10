@@ -43,7 +43,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(inactive|active|aux|slave|moot|front|mid|back|elapsed|recurred|goal|readied|started|running|stopped|aborted|next|value|all|any|me)\b</string>
+			<string>\b(inactive|active|aux|slave|moot|front|mid|back|elapsed|recurred|goal|readied|started|running|stopped|aborted|next|value|all|any|me|root|actor|main)\b</string>
 			<key>name</key>
 			<string>entity.name.tag.floscript</string>
 		</dict>
@@ -85,15 +85,34 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(house|framer|frame)\b</string>
+			<string>^(\s*(bid))?\s*(aux|print|load|server|logger|log|loggee|first|over|under|next|native|enter|benter|recur|precur|exit|rexit|renter|done|repeat|timeout|rear|raze|bid|start|stop|run|abort|ready)\b</string>
+			<key>name</key>
+			<string>keyword.control.floscript</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>pentity.name.function.floscript</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>support.class.floscript</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>^(\s*)?(house|framer|frame)\s+(\S+)</string>
 			<key>name</key>
 			<string>entity.name.function.floscript</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>^(\s*(bid))?\s*(aux|print|load|house|server|logger|log|loggee|first|over|under|next|native|enter|benter|recur|precur|exit|rexit|renter|done|repeat|timeout|rear|raze|bid|start|stop|run|abort|ready)\b</string>
+			<string>\b(house|framer|frame)\b</string>
 			<key>name</key>
-			<string>keyword.control.floscript</string>
+			<string>entity.name.function.floscript</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
