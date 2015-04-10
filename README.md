@@ -11,11 +11,14 @@ Sublime Text package with syntax highlighting support for [FloScript](https://gi
 3. Search for `FloScript`. Click the FloScript package in the search results.
 
 ### Manual Installation (OS X)
-```cp floscript.tm* ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/```
+```bash
+cp floscript.tm* ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
+```
 
 
 ## Building
 Build floscript.tmLanguage from floscript.YAML-tmLanguage:
+
 1. Open floscript.YAML-tmLanguage in [Sublime Text](http://www.sublimetext.com/).
 2. Select `Tools` > `Build`. This should auto-detect the YAML syntax and generate a floscript.tmLanguage file in Property List (XML) format.
 3. To install, see Manual Installation instructions (above).
