@@ -19,6 +19,6 @@ cp floscript.tm* ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 To build *floscript.tmLanguage* from *floscript.YAML-tmLanguage*:
 
 1. In [Sublime Text](http://www.sublimetext.com/), open *floscript.YAML-tmLanguage*.
-2. Select `Tools` > `Build`. This should auto-detect the YAML syntax and generate a floscript.tmLanguage file in Property List (XML) format.
+2. Select `Tools` > `Build`. This should auto-detect the YAML syntax and generate *floscript.tmLanguage* in Property List (XML) format in the current directory.
 
 To install, see Manual Installation instructions (above).
