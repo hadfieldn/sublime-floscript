@@ -1,0 +1,58 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+#
+# To install:
+# Build to *.tmLanguage (XML format), then copy to ~/Library/Application Support/Sublime Text 3/Packages/User/
+#
+# RE syntax: http://www.geocities.jp/kosako3/oniguruma/doc/RE.txt
+# See also http://www.apeth.com/nonblog/stories/textmatebundle.html
+# For RE testing, see http://www.rubular.com
+#
+# All REs must apply to a single line at a time, though endCapture continues on the same line as begin
+#
+# Scope list:
+# http://manual.macromates.com/en/language_grammars#naming_conventions
+---
+name: FloScript
+scopeName: source.floscript
+fileTypes: [flo]
+uuid: 0c5ea77f-252b-420d-a045-44c0ac0b851f
+
+patterns:
+- name: comment.line.number-sign.floscript
+  match: (#)(.*)\n?
+  captures:
+    '1': {name: punctuation.definition.comment.floscript}
+    '2': {name: text.definition.comment.floscript}
+
+- name: constant.numeric.floscript
+  match: (\b|\s+)(-?(?:\d*\.)?\d+)\b
+
+- name: support.constant.floscript
+  match: \b(true|false)\b
+
+- name: entity.name.tag.floscript
+  match: \b(inactive|active|aux|slave|moot|front|mid|back|elapsed|recurred|goal|readied|started|running|stopped|aborted|next|value|all|any|me)\b
+
+- name: string.quoted.floscript
+  match: (".*?")
+
+- name: keyword.operator.floscript
+  match: \b(to|with|by|from|per|for|as|at|in|of|on|be|into|and|not|first|cum|via)\b
+
+- name: keyword.operator.floscript
+  match: (\b|\s+)\.(\b|\s+)
+
+- name: keyword.operator.floscript
+  match: \b(if)(\s+(always|done|status|(update|change)(\s+(in))?|elapsed|recurred))?\b
+
+- name: keyword.operator.comparison.floscript
+  match: (==|!=|<>|<=|>=|<|>|\+\-)
+
+- name: keyword.control.floscript
+  match: ^(\s*(bid))?\s*(init|put|copy|inc|set|do|go|let|aux|need)\b
+
+- name: entity.name.function.floscript
+  match: \b(house|framer|frame)\b
+
+- name: keyword.control.floscript
+  match: ^(\s*(bid))?\s*(aux|print|load|house|server|logger|log|loggee|first|over|under|next|native|enter|benter|recur|precur|exit|rexit|renter|done|repeat|timeout|rear|raze|bid|start|stop|run|abort|ready)\b
