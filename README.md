@@ -11,7 +11,7 @@ Sublime Text package with syntax highlighting support for [FloScript](https://gi
 3. Search for `FloScript`. Click the FloScript package in the search results.
 
 ### Manual Installation (OS X)
-```bash
+```console
 cp floscript.tm* ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 ```
 
