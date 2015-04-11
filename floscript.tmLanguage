@@ -37,7 +37,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(true|false)\b</string>
+			<string>(?i)\b(true|false)\b</string>
 			<key>name</key>
 			<string>support.constant.floscript</string>
 		</dict>

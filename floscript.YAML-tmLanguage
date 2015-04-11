@@ -28,7 +28,7 @@ patterns:
   match: (\b|\s+)(-?(?:\d*\.)?\d+)\b
 
 - name: support.constant.floscript
-  match: \b(true|false)\b
+  match: (?i)\b(true|false)\b
 
 - name: entity.name.tag.floscript
   match: \b(inactive|active|aux|slave|moot|front|mid|back|elapsed|recurred|goal|readied|started|running|stopped|aborted|next|value|all|any|me|root|actor|main)\b
